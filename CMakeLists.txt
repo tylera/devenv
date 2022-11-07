@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.13)  # CMake version check
+#set(CMAKE_GENERATOR "Ninja")
 set(CMAKE_CXX_COMPILER "clang")
 project(main)               # Create project "simple_example"
 #set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard

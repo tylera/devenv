@@ -5,4 +5,5 @@ mkdir build
 fi
 
 cd build
-cmake ..
+cmake .. -GNinja
+ninja
