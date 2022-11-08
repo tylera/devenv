@@ -4,9 +4,12 @@ set(CMAKE_CXX_COMPILER "clang")
 project(main)               # Create project "simple_example"
 #set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 
+include_directories("file-io/include")
+add_subdirectory("file-io")
 
 # Add main.cpp file of project root directory as source file
 set(SOURCE_FILES main.c)
 
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(main ${SOURCE_FILES})
+target_link_libraries(main file-io)
